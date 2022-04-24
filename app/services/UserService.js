@@ -10,5 +10,12 @@ class UserService {
   static updateUserUsername(User, username) {
     User.setUsername = username;
   }
+  static getAllUsernames([user1, user2, user3]) {
+    return [user1.getUsername, user2.getUsername, user3.getUsername];
+  }
+  //El siguiente método funciona si enviamos los usuarios desde el test como una lista de objetos
+  //   static getAllUsernames(usuarios) {
+  //     return usuarios.map((user) => user.getUsername);
+  //   }
 }
 module.exports = UserService;
