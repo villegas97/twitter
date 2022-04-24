@@ -1,5 +1,5 @@
-const User = require("../../app/models/User");
-const UserService = require("../../app/services/UserService");
+const User = require("./../../app/models/User");
+const UserService = require("./../../app/services/UserService");
 describe("Tests for UserService", () => {
   test("1. Create a new user using the UserService", () => {
     const user = UserService.create(1, "villegas97", "Villegas");
